@@ -7,7 +7,7 @@ const cors = require("cors");
 const app = express();
 const PORT = 5000;
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: ["http://jaylakhani.tech","https://jaylakhani.tech"],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
@@ -27,7 +27,7 @@ app.post("/api/contact", async (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "tapms001@gmail.com",
+      user: process.env.SMTP_EMAIL,
       pass: process.env.SMTP_PASSWORD,
     },
   });

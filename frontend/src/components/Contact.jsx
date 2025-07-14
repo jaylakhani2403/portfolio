@@ -14,7 +14,7 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const res = await fetch("http://localhost:5000/api/contact", {
+      const res = await fetch(`${base_url}/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
@@ -142,7 +142,7 @@ const Contact = () => {
             {/* Social Media */}
             <div className="bg-white/70 dark:bg-white/10 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/20">
               <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-6">Connect with me</h3>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 dark:text-white">
                 {[
                   { icon: Linkedin, href: "https://www.linkedin.com/in/jay-lakhani-5468ab286", label: "LinkedIn", color: "hover:bg-blue-600" },
                   { icon: Github, href: "https://github.com/jaylakhani2403", label: "GitHub", color: "hover:bg-gray-800" },

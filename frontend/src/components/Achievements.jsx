@@ -59,11 +59,11 @@ const Experience = () => {
                     <div className="grid md:grid-cols-2 gap-4">
                       <div className="p-4 bg-gray-50 dark:bg-gray-700 rounded-xl">
                         <h4 className="font-semibold text-gray-800 dark:text-white">12th Science</h4>
-                        <p className="text-sm text-gray-600 dark:text-gray-300">Shree Gyandeep Vidhyalaya, Rajkot (2023)</p>
+                        <p className="text-sm text-gray-600 dark:text-gray-300">Prayag Vidhyalaya, junagadh (2023)</p>
                       </div>
                       <div className="p-4 bg-gray-50 dark:bg-gray-700 rounded-xl">
                         <h4 className="font-semibold text-gray-800 dark:text-white">10th Grade</h4>
-                        <p className="text-sm text-gray-600 dark:text-gray-300">Shree Gyandeep Vidhyalaya, Rajkot (2021)</p>
+                        <p className="text-sm text-gray-600 dark:text-gray-300">Alpha Vidhya Sankul , junagadh (2021)</p>
                       </div>
                     </div>
                   </div>

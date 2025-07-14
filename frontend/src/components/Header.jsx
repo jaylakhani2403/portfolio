@@ -64,8 +64,11 @@ const Header = () => {
         <div className="flex items-center space-x-2 group cursor-pointer">
           <div className="relative">
             <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <Sparkles className="w-5 h-5 text-white group-hover:rotate-12 transition-transform duration-300" />
-            </div>
+  <span className="text-white font-bold text-lg tracking-wide group-hover:rotate-12 transition-transform duration-300">
+    JL
+  </span>
+</div>
+
             <div className="absolute inset-0 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-xl blur opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
           </div>
           <div className="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-800 dark:from-indigo-400 dark:via-purple-400 dark:to-indigo-300 bg-clip-text text-transparent">
@@ -182,7 +185,7 @@ const Header = () => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes fade-in-up {
           from {
             opacity: 0;

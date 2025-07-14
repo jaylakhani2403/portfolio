@@ -122,7 +122,7 @@ const Skills = () => {
           Recognized for contribution to events and student programs
         </p>
         <a
-          href="https://drive.google.com/file/d/1volunteer_certificate_example_link/view?usp=sharing"
+          href="https://drive.google.com/file/d/1W6dWy97qdyVSKnoH3qcOJr_vBPHUV34N/view?usp=drivesdk"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 bg-white text-rose-600 dark:bg-rose-100 dark:text-rose-700 px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 hover:bg-rose-50"

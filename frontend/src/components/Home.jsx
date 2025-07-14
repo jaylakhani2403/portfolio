@@ -7,7 +7,14 @@ const Home = () => {
   const [isDeleting, setIsDeleting] = useState(false);
 
   const roles = ['MERN Stack Developer', 'Full Stack Engineer', 'Open to Internships'];
-
+ const handleDownload = () => {
+  const link = document.createElement('a');
+  link.href = 'https://drive.google.com/uc?export=download&id=1HSD6JpdALOp05L-MqwsyOAkok_6-JBW9';
+  link.download = 'Jay_Lakhani_Resume.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
   const skills = [
     { icon: Code, name: 'React', color: 'text-blue-500' },
     { icon: Database, name: 'MongoDB', color: 'text-green-500' },
@@ -21,7 +28,7 @@ const Home = () => {
     const t=setTimeout(() => {
       
     }, typingSpeed);
-
+   
     const timer = setTimeout(() => {
       if (!isDeleting && displayText === currentRoleText) {
         setTimeout(() => setIsDeleting(true), 2000);
@@ -77,12 +84,8 @@ const Home = () => {
 
       <div className="relative z-10 max-w-6xl text-center">
         {/* Welcome Badge */}
-        <div className="mb-8 mt-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm rounded-full border border-indigo-200 dark:border-indigo-700 mb-6 animate-fade-in-up">
-            <Sparkles className="w-4 h-4 text-indigo-500 animate-pulse" />
-            <span className="text-sm font-medium text-gray-600 dark:text-gray-300">Welcome to my portfolio</span>
-          </div>
-
+        <div className="mb-8 mt-30">
+        
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <span className="text-gray-800 dark:text-white">Hi, I'm </span>
             <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-cyan-600 dark:from-indigo-400 dark:via-purple-400 dark:to-cyan-400 bg-clip-text text-transparent animate-gradient-x">
@@ -141,28 +144,27 @@ const Home = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-700 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
           </a>
 
-          <a
-            href="https://drive.google.com/file/d/1HSD6JpdALOp05L-MqwsyOAkok_6-JBW9/view?usp=drive_link"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group px-8 py-4 bg-white/80 dark:bg-gray-800/90 backdrop-blur-sm border-2 border-indigo-600 dark:border-indigo-400 text-indigo-600 dark:text-indigo-300 rounded-xl font-semibold hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-400 dark:hover:text-black transition-all duration-300 hover:scale-105 hover:shadow-xl"
-          >
-            <span className="flex items-center gap-2">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-              </svg>
-              Download Resume
-            </span>
-          </a>
+        
+         <button
+    onClick={handleDownload}
+    className="group px-8 py-4 bg-white/80 dark:bg-gray-800/90 backdrop-blur-sm border-2 border-indigo-600 dark:border-indigo-400 text-indigo-600 dark:text-indigo-300 rounded-xl font-semibold hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-400 dark:hover:text-black transition-all duration-300 hover:scale-105 hover:shadow-xl"
+  >
+    <span className="flex items-center gap-2">
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+      </svg>
+      Download Resume
+    </span>
+  </button>
         </div>
 
         {/* Scroll Down Indicator */}
-        <div className="animate-fade-in-up" style={{ animationDelay: '1.2s' }}>
+        {/* <div className="animate-fade-in-up" style={{ animationDelay: '1.2s' }}>
           <div className="flex flex-col items-center text-gray-400 dark:text-gray-500">
             <span className="text-sm mb-2 font-medium">Scroll to explore</span>
             <ChevronDown className="w-6 h-6 animate-bounce" />
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Animations */}

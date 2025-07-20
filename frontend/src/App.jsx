@@ -3,7 +3,7 @@ import './App.css'
 import Header from "./components/Header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './components/Home';
-import Experience from './components/achievements';
+import Experience from './components/Achievements';
 import Projects from './components/Project';
 import Skills from './components/Skill';
 import Contact from './components/Contact';

@@ -1,13 +1,14 @@
- require("dotenv").config(); // Load .env config
+import dotenv from "dotenv";
+import express from "express";
+import nodemailer from "nodemailer";
+import cors from "cors";
 
-const express = require("express");
-const nodemailer = require("nodemailer");
-const cors = require("cors");
+dotenv.config(); // Load .env config
 
 const app = express();
 const PORT = 5000;
 app.use(cors({
-  origin: ["http://jaylakhani.tech","https://jaylakhani.tech"],
+  origin: ["http://jaylakhani.tech","https://jaylakhani.tech","http://localhost:5173"],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
@@ -24,10 +25,10 @@ app.post("/api/contact", async (req, res) => {
   }
 
   // Configure mail transporter
-  const transporter = nodemailer.createTransport({
+  const transporter = nodemailer.createTransport({  
     service: "gmail",
     auth: {
-      user: process.env.SMTP_EMAIL,
+      user: process.env.SMTP_MAIL,
       pass: process.env.SMTP_PASSWORD,
     },
   });

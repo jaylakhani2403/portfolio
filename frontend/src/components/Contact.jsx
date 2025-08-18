@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+const base_url=import.meta.env.VITE_API_BASE_URL;
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });

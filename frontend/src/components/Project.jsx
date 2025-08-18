@@ -3,8 +3,18 @@ import { ExternalLink, Github, Play, X } from 'lucide-react';
 
 const projects = [
   {
-    title: "TAPMS (Teams And Project Management System)",
-    tech: "MongoDB, Express.js, React.js, Node.js (MERN)",
+    title: "LOR (Letter of Recommendation) Management System - University Project(Present Working)",
+    tech: "PostgreSQL, Express.js, React.js, Node.js (PERN)",
+    description: "Built a platform to streamline the process of requesting, approving, and generating Letters of Recommendation (LOR). Students can submit structured requests, while faculty review and generate standardized letters. Provides role-based access for Students, Faculty, and Admin. Currently working on this project.",
+    githubLink: "https://github.com/jaylakhani2403/charusat_LOR.git",
+    // liveLink: "https://your-live-link.com",
+    // videoId: "",
+    featured: true
+  },
+  
+  {
+    title: "TAPMS (Teams And Project Management System only for admin allowed)",
+    tech: "PostgreSQL, Express.js, React.js, Node.js (PERN)",
     description: "A full-featured platform for managing teams and academic projects, including student-faculty collaboration, join requests, and project tracking.",
     githubLink: "https://github.com/vasu-CE/TAPMS.git",
     liveLink: "https://tapms-1.onrender.com",
@@ -12,7 +22,7 @@ const projects = [
     featured: true
   },
   {
-    title: "Email Marketing Platform",
+    title: "Email Marketing Platform ",
     tech: "MERN Stack, Nodemailer, Excel Integration",
     description: "A platform to send bulk emails using SMTP settings, Excel upload, campaign tracking, and open/click statistics.",
     githubLink: "https://github.com/jaylakhani2403/email-marketing.git",
@@ -85,7 +95,7 @@ const Projects = () => {
                 </p>
 
                 <div className="flex flex-wrap gap-3">
-                  <a
+                {project.githubLink &&  <a  
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -93,8 +103,8 @@ const Projects = () => {
                   >
                     <Github size={16} />
                     GitHub
-                  </a>
-                  <a
+                  </a>}
+                  {project.liveLink && <a
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -102,7 +112,7 @@ const Projects = () => {
                   >
                     <ExternalLink size={16} />
                     Live Demo
-                  </a>
+                  </a>}
                   {project.videoId && (
                     <button
                       onClick={() => openVideo(project.videoId)}

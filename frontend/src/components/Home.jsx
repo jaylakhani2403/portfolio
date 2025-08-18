@@ -6,10 +6,10 @@ const Home = () => {
   const [displayText, setDisplayText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const roles = ['MERN Stack Developer', 'Full Stack Engineer', 'Open to Internships'];
+  const roles = ['MERN Stack Developer', 'Full Stack Engineer', 'Open to Internships','BACKEND '];
  const handleDownload = () => {
   const link = document.createElement('a');
-  link.href = 'https://drive.google.com/uc?export=download&id=1HSD6JpdALOp05L-MqwsyOAkok_6-JBW9';
+  link.href = 'https://drive.google.com/uc?export=download&id=1t9yn1Hmdj5d0xTXvwxm8qCaWWNNtJRhs';
   link.download = 'Jay_Lakhani_Resume.pdf';
   document.body.appendChild(link);
   link.click();
@@ -17,7 +17,7 @@ const Home = () => {
 };
   const skills = [
     { icon: Code, name: 'React', color: 'text-blue-500' },
-    { icon: Database, name: 'MongoDB', color: 'text-green-500' },
+    { icon: Database, name: 'MongoDB  & PostgreSQL', color: 'text-green-500' },
     { icon: Globe, name: 'Node.js', color: 'text-yellow-500' },
     { icon: Code, name: 'Express', color: 'text-purple-500' }
   ];

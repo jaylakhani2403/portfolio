@@ -36,16 +36,16 @@ const Experience = () => {
               <span className="absolute -left-14 top-2 bg-gradient-to-r from-indigo-600 to-purple-600 p-3 rounded-full text-white shadow-xl group-hover:shadow-2xl group-hover:scale-110 transition-all duration-300">
                 <GraduationCap size={20} />
               </span>
-              
+
               <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl group-hover:shadow-2xl group-hover:-translate-y-2 transition-all duration-300 border border-gray-100 dark:border-gray-700 backdrop-blur-sm">
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-950 dark:to-purple-950 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
+
                 <div className="relative z-10">
                   <h3 className="text-3xl font-bold text-gray-800 dark:text-white mb-6 flex items-center gap-3">
                     <span className="text-indigo-600 dark:text-indigo-400">🎓</span>
                     Education
                   </h3>
-                  
+
                   <div className="space-y-6">
                     <div className="p-4 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900 dark:to-purple-900 rounded-xl border-l-4 border-indigo-500">
                       <h4 className="text-xl font-semibold text-gray-800 dark:text-white">CHARUSAT University</h4>
@@ -55,7 +55,7 @@ const Experience = () => {
                         CGPI: 8.62
                       </span>
                     </div>
-                    
+
                     <div className="grid md:grid-cols-2 gap-4">
                       <div className="p-4 bg-gray-50 dark:bg-gray-700 rounded-xl">
                         <h4 className="font-semibold text-gray-800 dark:text-white">12th Science</h4>
@@ -76,57 +76,71 @@ const Experience = () => {
               <span className="absolute -left-14 top-2 bg-gradient-to-r from-cyan-600 to-blue-600 p-3 rounded-full text-white shadow-xl group-hover:shadow-2xl group-hover:scale-110 transition-all duration-300">
                 <Briefcase size={20} />
               </span>
-              
+
               <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl group-hover:shadow-2xl group-hover:-translate-y-2 transition-all duration-300 border border-gray-100 dark:border-gray-700">
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-50 to-blue-50 dark:from-cyan-950 dark:to-blue-950 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
+
                 <div className="relative z-10">
                   <h3 className="text-3xl font-bold text-gray-800 dark:text-white mb-6 flex items-center gap-3">
                     <span className="text-cyan-600 dark:text-cyan-400">💼</span>
                     Internships
                   </h3>
-                  
+
                   <div className="space-y-6">
                     <div className="p-6 bg-gradient-to-r from-cyan-50 to-blue-50 dark:from-cyan-900 dark:to-blue-900 rounded-xl border-l-4 border-cyan-500">
-                      <h4 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">Web Development Intern</h4>
-                      <p className="text-gray-600 dark:text-gray-300 mb-3">Full-stack web development experience</p>
-                      <div className="flex flex-wrap gap-2 mt-3">
-                        {['React', 'Node.js', 'MongoDB', 'TailwindCSS'].map((tech, index) => (
+                      <h4 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+                        Web Development Intern @ REALLOC INFOTECH PVT. LTD.
+                      </h4>
+                      <p className="text-gray-600 dark:text-gray-300 mb-2">
+                        Surat, Gujarat | May 2025 – June 2025
+                      </p>
+                      <p className="text-gray-600 dark:text-gray-300 mb-3">
+                        Worked as a <b>Full Stack Developer Intern</b> focusing on application study, design, coding, and implementation.
+                        Contributed effectively to tasks under the guidance of senior developers and gained strong hands-on experience.
+                      </p>
+                      <div className="flex flex-wrap gap-2 m-3">
+                        {['React.js', 'Node.js', 'Express.js', 'JavaScript', 'Full Stack Development'].map((tech, index) => (
                           <span key={index} className="px-3 py-1 bg-cyan-600 text-white text-sm rounded-full font-medium">
                             {tech}
                           </span>
                         ))}
-                      </div>
+                      </div>  
+                      {/* Certificate */}
+                       <a href="https://drive.google.com/file/d/1p43YPeDDB8QqKyc1ZGm5HR3Iq1UzRTvI/view?usp=drive_link" className="  m-3 inline-flex items-center gap-1 px-3 py-1 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors">
+                        <Award size={12} />
+                        Certificate
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
+
             {/* === Hackathons & Achievements === */}
             <div className="relative group">
               <span className="absolute -left-14 top-2 bg-gradient-to-r from-orange-600 to-red-600 p-3 rounded-full text-white shadow-xl group-hover:shadow-2xl group-hover:scale-110 transition-all duration-300">
                 <Award size={20} />
               </span>
-              
+
               <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl group-hover:shadow-2xl group-hover:-translate-y-2 transition-all duration-300 border border-gray-100 dark:border-gray-700">
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-50 to-red-50 dark:from-orange-950 dark:to-red-950 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
+
                 <div className="relative z-10">
                   <h3 className="text-3xl font-bold text-gray-800 dark:text-white mb-6 flex items-center gap-3">
                     <span className="text-orange-600 dark:text-orange-400">🏆</span>
                     Hackathons & Achievements
                   </h3>
-                  
+
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="p-6 bg-gradient-to-r from-orange-50 to-red-50 dark:from-orange-900 dark:to-red-900 rounded-xl border-l-4 border-orange-500">
                       <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">🧠 InnoTech 1.0</h4>
                       <p className="text-gray-600 dark:text-gray-300 mb-3">Presented project and received professional feedback</p>
-                      
+
                       <div className="p-4 mt-3 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900 dark:to-orange-900 rounded-lg border border-yellow-200 dark:border-yellow-700">
                         <h5 className="text-md font-semibold text-gray-800 dark:text-white mb-2">🍕 Food Fox</h5>
                         <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">
-                          PHP-based food delivery web application that allows users to browse restaurants, place orders, and manage deliveries. 
+                          PHP-based food delivery web application that allows users to browse restaurants, place orders, and manage deliveries.
                           Features include user authentication, admin dashboard, and order management.
                         </p>
                         <div className="flex flex-wrap gap-2 mb-3">
@@ -148,15 +162,15 @@ const Experience = () => {
                         </div>
                       </div>
                     </div>
-                    
+
                     <div className="p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900 dark:to-pink-900 rounded-xl border-l-4 border-purple-500">
                       <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">⏱ 48-Hour Hackathon</h4>
                       <p className="text-gray-600 dark:text-gray-300 mb-3">@ Nirma University – Built real-time prototype</p>
-                      
+
                       <div className="p-4 mt-3 bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-emerald-900 dark:to-teal-900 rounded-lg border border-emerald-200 dark:border-emerald-700">
                         <h5 className="text-md font-semibold text-gray-800 dark:text-white mb-2">🤖 AI Spoilage Detection System</h5>
                         <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">Petpooja is an AI-powered kitchen management system that leverages computer vision to track inventory and detect food spoilage in real-time. It ensures efficient stock management, reduces waste, and maintains food quality through automated visual monitoring and intelligent alerts.
-(YOLOv8 + Flask for fruit quality classification)</p>
+                          (YOLOv8 + Flask for fruit quality classification)</p>
                         <div className="flex flex-wrap gap-2 mb-3">
                           {['YOLOv8', 'Flask', 'AI/ML', 'Computer Vision'].map((tech, index) => (
                             <span key={index} className="px-2 py-1 bg-emerald-600 text-white text-xs rounded-full font-medium">
@@ -176,7 +190,7 @@ const Experience = () => {
                         </div>
                       </div>
                     </div>
-                    
+
                     <div className="md:col-span-2 p-6 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900 dark:to-purple-900 rounded-xl border-l-4 border-indigo-500">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                         <div>
@@ -212,10 +226,11 @@ const Experience = () => {
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
               Let's connect and build something amazing together. I'm always excited to work on innovative projects and bring creative ideas to life.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="https://drive.google.com/file/d/1HSD6JpdALOp05L-MqwsyOAkok_6-JBW9/view?usp=drive_link"
+
+                href="https://drive.google.com/uc?export=download&id=1t9yn1Hmdj5d0xTXvwxm8qCaWWNNtJRhs"
                 target="_blank"
                 className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 overflow-hidden"
               >
@@ -223,7 +238,7 @@ const Experience = () => {
                 <Download size={20} className="relative z-10 group-hover:animate-bounce" />
                 <span className="relative z-10">Download Resume</span>
               </a>
-              
+
               <a
                 href="/contact"
                 className="group relative inline-flex items-center gap-3 px-8 py-4 bg-transparent border-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 dark:border-indigo-400 font-semibold rounded-xl hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-400 dark:hover:text-gray-900 transition-all duration-300"
@@ -232,7 +247,7 @@ const Experience = () => {
                 <span>Get In Touch</span>
               </a>
             </div>
-            
+
             <div className="mt-8 flex justify-center items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
               <span>💡 Open for opportunities</span>
               <span>•</span>

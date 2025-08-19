@@ -8,7 +8,7 @@ dotenv.config(); // Load .env config
 const app = express();
 const PORT = 5000;
 app.use(cors({
-  origin: ["http://jaylakhani.tech","https://jaylakhani.tech","http://localhost:5173"],
+  origin: ["http://jaylakhani.tech","https://jaylakhani.tech","http://localhost:5173","http://13.50.73.173"],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
 }));

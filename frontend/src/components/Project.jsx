@@ -7,7 +7,7 @@ const projects = [
     tech: "PostgreSQL, Express.js, React.js, Node.js (PERN)",
     description: "Built a platform to streamline the process of requesting, approving, and generating Letters of Recommendation (LOR). Students can submit structured requests, while faculty review and generate standardized letters. Provides role-based access for Students, Faculty, and Admin. Currently working on this project.",
     githubLink: "https://github.com/jaylakhani2403/charusat_LOR.git",
-    // liveLink: "https://your-live-link.com",
+    liveLink: "http://136.233.130.148:8085/",
     // videoId: "",
     featured: true
   },

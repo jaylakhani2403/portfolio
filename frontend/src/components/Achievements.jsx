@@ -52,7 +52,7 @@ const Experience = () => {
                       <p className="text-gray-600 dark:text-gray-300 mt-1">Anand, Gujarat</p>
                       <p className="text-gray-700 dark:text-gray-200 mt-2">B.Tech in Computer Engineering (2023–2027)</p>
                       <span className="inline-block mt-2 px-3 py-1 bg-indigo-600 text-white text-sm rounded-full font-medium">
-                        CGPI: 8.62
+                        CGPI: 8.70
                       </span>
                     </div>
 
@@ -155,7 +155,7 @@ const Experience = () => {
                             <ExternalLink size={12} />
                             GitHub
                           </a>
-                          <a href="https://drive.google.com/file/d/1W66P1g3RYfZO7nZSfT3_yJHbk_fkS0Na/view?usp=drive_link" className="inline-flex items-center gap-1 px-3 py-1 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors">
+                          <a href="https://drive.google.com/file/d/14jVg0_MFZYCZdxzBwta7SIrW9evi9rJ1/view?usp=drive_link" className="inline-flex items-center gap-1 px-3 py-1 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors">
                             <Award size={12} />
                             Certificate
                           </a>
@@ -194,7 +194,7 @@ const Experience = () => {
                     <div className="md:col-span-2 p-6 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900 dark:to-purple-900 rounded-xl border-l-4 border-indigo-500">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                         <div>
-                          <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">💻 175+ LeetCode Problems</h4>
+                          <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">💻 350+ LeetCode Problems</h4>
                           <p className="text-gray-600 dark:text-gray-300">Solved using multiple programming languages</p>
                         </div>
                         <a href="https://leetcode.com/u/jaylakhani2403/" target="_blank" className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors mt-3 md:mt-0">

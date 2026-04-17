@@ -56,12 +56,12 @@ const Contact = () => {
       }
 
       // Send email using EmailJS
-      await emailjs.send(serviceId, templateId, {
+     await emailjs.send(serviceId, templateId, {
         to_email: 'jaylakhani2403@gmail.com',
-        from_name: form.name,
+        name: form.name,
         from_email: form.email,
         message: form.message,
-        reply_to: form.email
+        email: form.email
       });
 
       setSubmitStatus('success');

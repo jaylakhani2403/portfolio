@@ -36,7 +36,7 @@ const skills = [
       { name: "C++", icon: "⚙️", color: "text-blue-700" },
       { name: "Git & GitHub", icon: "📝", color: "text-orange-500" },
       { name: "Docker", icon: "🐳", color: "text-blue-400" },
-      { name: "AWS (Learning)", icon: "☁️", color: "text-blue-400" },
+      { name: "AWS", icon: "☁️", color: "text-blue-400" },
     ],
   },
   {
@@ -115,7 +115,7 @@ const Skills = () => {
     </div>
 
     {/* Volunteer Certificates Section */}
-    <div className="bg-gradient-to-r from-rose-600 to-pink-500 dark:from-rose-800 dark:to-pink-700 rounded-3xl p-8 text-white shadow-2xl mb-12">
+    {/* <div className="bg-gradient-to-r from-rose-600 to-pink-500 dark:from-rose-800 dark:to-pink-700 rounded-3xl p-8 text-white shadow-2xl mb-12">
       <div className="text-center">
         <h3 className="text-3xl font-bold mb-4">🤝 Volunteer Certificates</h3>
         <p className="text-rose-100 dark:text-rose-200 mb-6">
@@ -131,7 +131,7 @@ const Skills = () => {
           View Volunteer Certificates
         </a>
       </div>
-    </div>
+    </div> */}
 
     {/* Statistics Section */}
     <div className="bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-800 dark:to-purple-800 rounded-3xl p-8 text-white shadow-2xl">

@@ -10,7 +10,7 @@ const Home = () => {
   
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = 'https://drive.google.com/uc?export=download&id=1t9yn1Hmdj5d0xTXvwxm8qCaWWNNtJRhs';
+    link.href = 'https://drive.google.com/uc?export=download&id=14jVg0_MFZYCZdxzBwta7SIrW9evi9rJ1';
     link.download = 'Jay_Lakhani_Resume.pdf';
     document.body.appendChild(link);
     link.click();

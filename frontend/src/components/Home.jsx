@@ -7,14 +7,23 @@ const Home = () => {
   const [isDeleting, setIsDeleting] = useState(false);
 
   const roles = ['MERN Stack Developer', 'Full Stack Engineer', 'Open to Internships','BACKEND '];
- const handleDownload = () => {
-  const link = document.createElement('a');
-  link.href = 'https://drive.google.com/uc?export=download&id=1t9yn1Hmdj5d0xTXvwxm8qCaWWNNtJRhs';
-  link.download = 'Jay_Lakhani_Resume.pdf';
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-};
+  
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = 'https://drive.google.com/uc?export=download&id=1t9yn1Hmdj5d0xTXvwxm8qCaWWNNtJRhs';
+    link.download = 'Jay_Lakhani_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const handleScroll = (e, sectionId) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
   const skills = [
     { icon: Code, name: 'React', color: 'text-blue-500' },
     { icon: Database, name: 'MongoDB  & PostgreSQL', color: 'text-green-500' },
@@ -133,8 +142,8 @@ const Home = () => {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in-up" style={{ animationDelay: '1s' }}>
-          <a
-            href="/projects"
+          <button
+            onClick={(e) => handleScroll(e, 'projects')}
             className="group relative px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl overflow-hidden"
           >
             <span className="relative z-10 flex items-center gap-2">
@@ -142,7 +151,7 @@ const Home = () => {
               View My Projects
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-700 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
-          </a>
+          </button>
 
         
          <button

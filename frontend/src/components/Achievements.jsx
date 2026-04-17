@@ -3,7 +3,7 @@ import { Briefcase, GraduationCap, Award, Download, ExternalLink } from 'lucide-
 
 const Experience = () => {
   return (
-    <section id="education" className="relative w-full py-20 px-4 bg-gradient-to-br from-slate-50 via-white to-indigo-50 dark:from-gray-900 dark:via-black dark:to-indigo-950 transition-all duration-700 overflow-hidden">
+    <section id="achievements" className="relative w-full py-20 px-4 bg-gradient-to-br from-slate-50 via-white to-indigo-50 dark:from-gray-900 dark:via-black dark:to-indigo-950 transition-all duration-700 overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-indigo-400 to-purple-400 rounded-full blur-3xl animate-pulse"></div>
@@ -15,7 +15,7 @@ const Experience = () => {
         {/* Section Title with Enhanced Styling */}
         <div className="text-center mb-20">
           <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-800 dark:from-indigo-400 dark:via-purple-400 dark:to-indigo-300 bg-clip-text text-transparent mb-6 animate-pulse">
-            Education & Experience
+            Achievements & Experience
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto rounded-full"></div>
           <p className="mt-6 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">

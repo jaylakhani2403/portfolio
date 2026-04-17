@@ -39,12 +39,22 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "Projects", href: "/projects" },
-    { name: "Skills", href: "/skills" },
-    { name: "Achievements", href: "/achievements" },
-    { name: "Contact", href: "/contact" },
+    { name: "Home", href: "#home" },
+    { name: "Projects", href: "#projects" },
+    { name: "Skills", href: "#skills" },
+    { name: "Certifications", href: "#certifications" },
+    { name: "Achievements", href: "#achievements" },
+    { name: "Contact", href: "#contact" },
   ];
+
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    setIsOpen(false);
+  };
 
   return (
     <header
@@ -82,7 +92,8 @@ const Header = () => {
             <a
               key={link.name}
               href={link.href}
-              className="relative px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 rounded-lg group"
+              onClick={(e) => handleNavClick(e, link.href)}
+              className="relative px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 rounded-lg group cursor-pointer"
             >
               <span className="relative z-10">{link.name}</span>
               <div className="absolute inset-0 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 origin-center"></div>
@@ -164,12 +175,12 @@ const Header = () => {
             <a
               key={link.name}
               href={link.href}
-              onClick={() => setIsOpen(false)}
+              onClick={(e) => handleNavClick(e, link.href)}
               className={`
                 block py-3 px-4 text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 
                 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 dark:hover:from-indigo-900/20 dark:hover:to-purple-900/20 
                 rounded-lg transition-all duration-300 transform hover:translate-x-2
-                animate-fade-in-up
+                animate-fade-in-up cursor-pointer
               `}
               style={{
                 animationDelay: `${index * 50}ms`,
